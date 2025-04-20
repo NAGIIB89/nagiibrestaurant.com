@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NAGIIB Restaurant</title>
+    <style>
+        /* Basic Reset */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Arial', sans-serif; line-height: 1.6; }
+        
+        /* Header Styles */
+        header {
+            background: #750101;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff0303;
+            padding: 0.5rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        
+        nav a:hover {
+            background: #e44949;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 60vh;
+            background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero-content {
+            background: rgba(179, 6, 6, 0.582);
+            padding: 2rem;
+            border-radius: 5px;
+        }
+        
+        /* Menu Section */
+        .menu {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .menu-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .menu-item {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        
+        /* Footer */
+        footer {
+            background: #ff0000;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 1rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>NAGIIB Restaurant</h1>
+        <p>NOOGU IMAADA CUNTO MACAAN 20XX</p>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>KUSOO DHAWOOW RESTURANt KAYAGA</h2>
+            <p>Experience the finest cuisine in town</p>
+            <button style="padding: 0.5rem 1rem; margin-top: 1rem; background: #ff6b6b; color: white; border: none; border-radius: 5px;">
+                Make a Reservation
+            </button>
+        </div>
+    </section>
+    
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <h3>CUNTO WADANEED</h3>
+                <p>SHUURO - 1.5$</p>
+                <p>LAXOOX IYO MUQUMAD - 1.2$</p>
+                <p>GAROW - 1$</p>
+            </div>
+            <div class="menu-item">
+                <h3>CUNTO NORMAL AH</h3>
+                <p>BARIIS IYO DIGAAG - $28</p>
+                <p>BAASTO IYO DIGAAG - $22</p>
+                <p>BARIIIS IYO ROOS - $16</p>
+            </div>
+            <div class="menu-item">
+                <h3>MACMACAANADA </h3>
+                <p>ICECREM - $8</p>
+                <p>Chocolate Lava Cake - $9</p>
+                <p>Cake - $7</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" style="padding: 2rem; text-align: center;">
+        <h2>About Us</h2>
+        <p>NOOGU IMOW CUNTO MACAN SHAQAALO JAJABAN IYO WALIBA QIIMO KU RAALI GALIYA.</p>
+    </section>
+    
+    <section id="contact" style="padding: 2rem; text-align: center; background: #f4f4f4;">
+        <h2>NAGASOO XIRIIR</h2>
+        <p>LOCATIONKA WAA KASOO HORJEDKA TIYAATARKA</p>
+        <p>Phone: +252 0634835466</p>
+        <p>Email: WWW.NAGIIBRESTURANT.GMAIL.COM</p>
+        <p>Hours: ISBUUCA OO DHAN WUU SHAQAYNAYAA 24/7</p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 NAGIIB RESTURANT.</p>
+    </footer>
+</body>
+</html>
